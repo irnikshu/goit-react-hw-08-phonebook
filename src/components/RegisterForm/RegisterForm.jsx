@@ -5,7 +5,6 @@ import TextField from '../../shared/components/TextField/TextField';
 import fields from './fields';
 import Button from '../../shared/components/Button/button';
 
-import styles from './register-form.module.scss';
 const RegisterForm = ({ onSubmit }) => {
   const { state, handleChange, handleSubmit } = useForm({
     initialState,

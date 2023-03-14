@@ -1,5 +1,5 @@
 import RegisterPage from 'components/Pages/RegisterPage/RegisterPage';
-import { lazy } from 'react';
+
 import { Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 
