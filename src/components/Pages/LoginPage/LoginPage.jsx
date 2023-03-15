@@ -1,25 +1,28 @@
-import { authSignUp } from '../../../redux/auth/auth-operation';
+import { login } from '../../../redux/auth/auth-operation';
 
 import { useDispatch } from 'react-redux';
 // import { Novigate } from 'react-router-dom';
-import RegisterForm from '../../../components/RegisterForm/RegisterForm';
-// import { isUserLogin } from '../../../redux/auth/auth-selector';
 
-const RegisterPage = () => {
+// import { isUserLogin } from '../../../redux/auth/auth-selector';
+import LoginForm from '../../LoginForm/LoginForm';
+
+const LoginPage = () => {
   // const isLogin = useSelector(isUserLogin);
   const dispatch = useDispatch();
-  const handleSignUp = data => {
-    dispatch(authSignUp(data));
+
+  const handleLogin = data => {
+    dispatch(login(data));
   };
+
   // if (isLogin) {
   //   return <Novigate to="" />;
   // }
   return (
     <div>
-      <h1>Register page</h1>
-      <RegisterForm onSubmit={handleSignUp} />
+      <h1>Login page</h1>
+      <LoginForm onSubmit={handleLogin} />
     </div>
   );
 };
 
-export default RegisterPage;
+export default LoginPage;

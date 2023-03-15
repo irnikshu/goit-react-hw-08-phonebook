@@ -1,4 +1,4 @@
-import styles from './register-form.module.scss';
+import styles from './login-form.module.scss';
 import useForm from '../../shared/hooks/useForm';
 import initialState from './initialState';
 import TextField from '../../shared/components/TextField/TextField';
@@ -10,18 +10,17 @@ const RegisterForm = ({ onSubmit }) => {
     initialState,
     onSubmit,
   });
-  const { name, email, password } = state;
+  const { email, password } = state;
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <TextField value={name} handleChange={handleChange} {...fields.name} />
       <TextField value={email} handleChange={handleChange} {...fields.email} />
       <TextField
         value={password}
         handleChange={handleChange}
         {...fields.password}
       />
-      <Button>Register</Button>
+      <Button>Login</Button>
     </form>
   );
 };
