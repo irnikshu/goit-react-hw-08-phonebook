@@ -49,8 +49,7 @@
 //   const isContacts = Boolean(filteredContacts?.length);
 //   return (
 //     <div className={styles.wrapper}>
-//       <AuthPage />
-//       <RegisterPage />
+//
 
 //       <h2 className={styles.title}>Phonebook</h2>
 //       <Form onSubmit={handleAddContact} />
