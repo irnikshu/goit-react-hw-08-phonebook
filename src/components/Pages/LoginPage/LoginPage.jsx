@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux';
 
 import LoginForm from '../../LoginForm/LoginForm';
 
+import { Box } from '@mui/material';
+
 const LoginPage = () => {
   const dispatch = useDispatch();
 
@@ -12,10 +14,19 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
-      <h1>Login page</h1>
+    <Box
+      sx={{
+    
+        justifyContent: 'center',
+        alignItems: 'center',
+        display: 'flex',
+        marginTop: '40px',
+      }}
+    >
+     
+
       <LoginForm onSubmit={handleLogin} />
-    </div>
+    </Box>
   );
 };
 

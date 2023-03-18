@@ -3,12 +3,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { fetchAllContacts, fetchAddContact, fetchDeleteContact } from "./contacts-operations";
 
 const initialState = {
-    contacts: {
+   
     items: [],
     loading: false,
     error: null,
-    },
-   filter: ""
+   
+  
 }
 
 const contactSlice = createSlice({

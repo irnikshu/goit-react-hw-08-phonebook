@@ -5,6 +5,7 @@ import TextField from '../../shared/components/TextField/TextField';
 import fields from './fields';
 import Button from '../../shared/components/Button/button';
 
+
 const RegisterForm = ({ onSubmit }) => {
   const { state, handleChange, handleSubmit } = useForm({
     initialState,
@@ -20,7 +21,7 @@ const RegisterForm = ({ onSubmit }) => {
         handleChange={handleChange}
         {...fields.password}
       />
-      <Button>Login</Button>
+      <Button type="submit">Login</Button>
     </form>
   );
 };

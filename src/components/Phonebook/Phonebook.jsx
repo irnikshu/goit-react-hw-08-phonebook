@@ -18,6 +18,8 @@ import { setFilter } from '../../redux/filter/filter-slice';
 import { getVisibleContact } from '../../redux/contacts/contacts-selectors';
 import { getFilter } from '../../redux/filter/filter-selectors';
 
+
+
 import '../../shared/Styles/styles.scss';
 
 const Phonebook = () => {
@@ -46,7 +48,7 @@ const Phonebook = () => {
   const isContacts = Boolean(filteredContacts?.length);
   return (
     <div className={styles.wrapper}>
-      <h2 className={styles.title}>Phonebook</h2>
+      <h1 className={styles.title}>Phonebook</h1>
       <Form onSubmit={handleAddContact} />
       <h2 className={styles.title}>Contacts</h2>
       <Filter value={filter} changeFilter={changeFilter} />

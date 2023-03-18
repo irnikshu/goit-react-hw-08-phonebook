@@ -48,10 +48,11 @@ const authSlice = createSlice({
             state.error = null;
         })
             .addCase(current.fulfilled, (state, { payload }) => {
-                const { user, token } = payload;
+                // const { user, token } = payload;
                 state.loading = false;
-                state.user = user;
-                state.token = token;
+                // state.user = user;
+                // state.token = token;
+                state.user = payload;
                 state.isLogin = true;
             })
             .addCase(current.rejected, (state, { payload }) => {

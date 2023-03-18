@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 import * as api from "../../shared/auth";
-// import { signUp, login }  from "../../shared/auth";
+
 
 export const authSignUp = createAsyncThunk(
     "auth/signup",
@@ -32,7 +32,7 @@ export const current = createAsyncThunk(
     "auth/current",
     async (_, { rejectWithValue, getState }) => {
         try {
-            const {auth}=getState()
+            const {auth} = getState()
             const data = await api.getCurrent(auth.token);
             return data;
          }

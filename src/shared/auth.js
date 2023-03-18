@@ -8,7 +8,7 @@ const setToken = token => {
     if (token) {
         return instance.defaults.headers.common.Authorization = `Bearer ${token}`
     }
-    instance.defaults.headers.common.Authorization = ""
+    instance.defaults.headers.common.Authorization = "";
 }
 
 export const signUp = async (data) => {

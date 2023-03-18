@@ -7,6 +7,7 @@ export const NavBar = () => {
   const isLogin = useSelector(isUserLogin);
   return (
     <>
+      {' '}
       {!isLogin && <NavBarAuth />}
       {isLogin && <NavBarUsers />}
     </>
