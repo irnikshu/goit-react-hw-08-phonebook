@@ -12,6 +12,8 @@ import rootReducer from "./root-reducer";
 
 
 
+
+
 export const store = configureStore({
     reducer: rootReducer,
     //  reducer: {
@@ -22,9 +24,11 @@ export const store = configureStore({
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
-    }),
-  })
+         },
+    })
+  },
+);
+ 
 
   export const persistor = persistStore(store)
 
