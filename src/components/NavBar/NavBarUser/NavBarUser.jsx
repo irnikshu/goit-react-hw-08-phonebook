@@ -8,6 +8,7 @@ import { getUser } from '../../../redux/auth/auth-selector';
 const NavBarUsers = () => {
   // const { name } = useSelector(getUser);
   const { email } = useSelector(getUser);
+
   // const user = useSelector(getUser);
   const dispatch = useDispatch();
 
