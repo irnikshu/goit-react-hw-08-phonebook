@@ -26,15 +26,26 @@ const NavBarAuth = () => {
           Sign up or log in to start using.
         </Typography>
       </Box>
-      <div className={styles.nav}>
-        <NavLink to="/register" className={styles.link}>
-          Register
-        </NavLink>{' '}
-        |
-        <NavLink to="/login" className={styles.link}>
-          Login
-        </NavLink>
-      </div>
+      <Box
+        sx={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          marginBottom: '30px',
+        }}
+      >
+        {' '}
+        <div>
+          <NavLink to="/register" className={styles.link}>
+            Register
+          </NavLink>{' '}
+          |
+          <NavLink to="/login" className={styles.link}>
+            Login
+          </NavLink>
+        </div>
+      </Box>
     </div>
   );
 };
